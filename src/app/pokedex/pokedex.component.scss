@@ -2,8 +2,11 @@
     width: auto;
     height: auto;
     margin-left: -1px;
-    margin-top: 30px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
 }
+
 
 .cam-hole-1{
     width: 12px;
@@ -92,7 +95,7 @@ ion-img{
     background-color: #bbe22c;
     border-radius: 7px;
     position: relative;
-    top: 70px;
+    top: 28px;
     left: -79px;
 }
 
@@ -104,10 +107,10 @@ ion-img{
 }
 
 .button-scan{
-    width: 55px; 
+    width: 55px;
     height: 55px;
-    top: 43px;
-    left: -89px;
+    top: 22px;
+    left: 66px;
     position: relative;
 }
 
@@ -133,8 +136,9 @@ ion-img{
 
 .cross-button{
     position: relative;
-    top: -38px;
+    top: -78px;
     left: 187px;
+    margin-bottom: 100px;
 }
 
 .main-content-container{
