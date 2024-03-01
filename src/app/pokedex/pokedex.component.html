@@ -1,15 +1,30 @@
 <ion-app>
   <ion-content id="iygtyd" color="primary">
-    <img id="im5l" src="../../assets/pokedex-head.png"/>
-      <div id="ijek" class="gjs-grid-row">
-        <div id="iarb" class="gjs-grid-column">
-          <img id="ixcb" src="../../assets/pokedex-cam.png" />
+    <img id="im5l" src="../../assets/pokedex-head.png" />
+    <div id="ijek" class="gjs-grid-row">
+      <div id="iarb" class="gjs-grid-column">
+        <img id="ixcb" src="../../assets/pokedex-cam.png">
+        <div style="    
+              position: relative;
+              top: -186px;
+              left: 75px;
+              width: 144px;">
+          <ion-img [src]="photoService.photo.webviewPath"></ion-img>
         </div>
       </div>
-      <div id="i3co" class="gjs-grid-row">
-        <div class="gjs-grid-column" id="itue">
-          <img src="../../assets/pokedex-bot.png" />
-        </div>
+    </div>
+    <div id="i3co" class="gjs-grid-row">
+      <div class="gjs-grid-column" style="margin-left: 12px;" id="itue">
+        <img src="../../assets/pokedex-bot.png" />
+        <ion-button color="dark" shape="round" style="    
+              position: relative;
+              top: -171px;
+              left: 110px;
+              width: 47px;
+              height: 51px;" (click)="addPhotoToGallery()">
+          <ion-icon name="scan-outline"></ion-icon>
+        </ion-button>
       </div>
+    </div>
   </ion-content>
 </ion-app>
