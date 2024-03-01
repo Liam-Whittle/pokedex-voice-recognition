@@ -38,6 +38,8 @@
 }
 #im5l {
 	color:black;
+    position: sticky;
+    top: 0;
 }
 .gjs-grid-column {
 	flex:1 1 0%;
@@ -47,8 +49,8 @@
 .gjs-grid-row {
 	display:flex;
 	justify-content:flex-start;
-	align-items:stretch;
-	flex-direction:row;
+	align-items:center;
+	flex-direction:column;
 	min-height:auto;
 	padding:10px 0;
 }
