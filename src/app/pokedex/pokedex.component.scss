@@ -1,148 +1,60 @@
-.pokedex-head{
-    width: auto;
-    height: auto;
-    margin-left: -1px;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
+.gjs-grid-column.feature-item {
+	padding-top:15px;
+	padding-right:15px;
+	padding-bottom:15px;
+	padding-left:15px;
+	display:flex;
+	flex-direction:column;
+	gap:15px;
+	min-width:30%;
 }
-
-
-.cam-hole-1{
-    width: 12px;
-    height: 12px;
-    background-color: black;
-    border-radius: 63px;
-    position: relative;
-    top: 59px;
-    left: 204px;
+.gjs-grid-column.testimonial-item {
+	padding-top:15px;
+	padding-right:15px;
+	padding-bottom:15px;
+	padding-left:15px;
+	display:flex;
+	flex-direction:column;
+	gap:15px;
+	min-width:45%;
+	background-color:rgba(247,247,247,0.23);
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+	border-bottom-left-radius:5px;
+	align-items:flex-start;
+	border-top-width:1px;
+	border-right-width:1px;
+	border-bottom-width:1px;
+	border-left-width:1px;
+	border-top-style:solid;
+	border-right-style:solid;
+	border-bottom-style:solid;
+	border-left-style:solid;
+	border-top-color:rgba(0,0,0,0.06);
+	border-right-color:rgba(0,0,0,0.06);
+	border-bottom-color:rgba(0,0,0,0.06);
+	border-left-color:rgba(0,0,0,0.06);
 }
-
-.cam-hole-2{
-    width: 12px;
-    height: 12px;
-    background-color: black;
-    border-radius: 63px;
-    position: relative;
-    top: 47px;
-    left: 116px;
+#im5l {
+	color:black;
 }
-
-.cam-light{
-    width: 20px;
-    height: 20px;
-    background-color: rgb(222, 0, 37);
-    border-radius: 63px;
-    position: relative;
-    top: 318px;
-    left: 57px;
+.gjs-grid-column {
+	flex:1 1 0%;
+	padding:5px 0;
+    margin-top: 30px;
 }
-
-.speaker-hole-1{
-    width: 36px;
-    height: 5px;
-    background-color: black;
-    border-radius: 63px;
-    position: relative;
-    top: 9px;
-    left: 201px;
+.gjs-grid-row {
+	display:flex;
+	justify-content:flex-start;
+	align-items:stretch;
+	flex-direction:row;
+	min-height:auto;
+	padding:10px 0;
 }
-
-.speaker-hole-2{
-    width: 36px;
-    height: 5px;
-    background-color: black;
-    border-radius: 63px;
-    position: relative;
-    top: 12px;
-    left: 201px;
+#ixcb {
+	color:black;
 }
-
-.speaker-hole-3{
-    width: 36px;
-    height: 5px;
-    background-color: black;
-    border-radius: 63px;
-    position: relative;
-    top: 15px;
-    left: 201px;
-}
-
-.cam-viewport{
-    background-color: rgb(226, 226, 226);
-    border-radius: 5px 5px 5px 40px;
-    margin: auto;
-    padding: 36px;
-}
-
-ion-img{
-    width: 250px;
-    height: 250px;
-    margin: auto;
-    border-radius: 7px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: rgb(89 141 183 / 28%);
-}
-
-.bottom-container{
-    width: auto;
-}
-
-.green-textbox{
-    width: 178px;
-    height: 94px;
-    background-color: #bbe22c;
-    border-radius: 7px;
-    position: relative;
-    top: 28px;
-    left: -79px;
-}
-
-.text{
-    color: green;
-    position: relative;
-    top: 35px;
-    left: 20px;
-}
-
-.button-scan{
-    width: 55px;
-    height: 55px;
-    top: 22px;
-    left: 66px;
-    position: relative;
-}
-
-.cross-horizontal{
-    background-color: #151618;
-    width: 112px;
-    height: 33px;
-    border-radius: 10px;
-    position: absolute;
-    top: 42px;
-    left: -40px;
-}
-
-.cross-vertical{
-    background-color: #151618;
-    width: 33px;
-    height: 112px;
-    border-radius: 10px;
-    position: absolute;
-    top: 3px;
-    left: 0px;
-}
-
-.cross-button{
-    position: relative;
-    top: -78px;
-    left: 187px;
-    margin-bottom: 100px;
-}
-
-.main-content-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#i72t {
+	color:black;
 }
