@@ -1,0 +1,8 @@
+{
+  "name": "PokedexAI",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "a8b44d8d"
+}
