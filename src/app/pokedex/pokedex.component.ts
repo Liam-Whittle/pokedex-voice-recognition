@@ -1,20 +1,21 @@
 import { Component, OnInit } from '@angular/core';
+import { VoiceRecognitionService } from '../services/voice-recognition.service';
 import { PhotoService } from '../services/photo.service';
 
 @Component({
   selector: 'app-pokedex',
   templateUrl: './pokedex.component.html',
   styleUrls: ['./pokedex.component.scss'],
-  providers: [PhotoService]
+  providers: [VoiceRecognitionService]
 })
 export class PokedexComponent  implements OnInit {
 
-  constructor(public photoService: PhotoService) { }
+  constructor(public voiceService: VoiceRecognitionService, public photoService: PhotoService) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
 
-  addPhotoToGallery() {
-    this.photoService.addNewToGallery();
-    console.log(this.photoService.photo?.webviewPath);
+  searchVoiceTerm() {
+    this.voiceService.searchVoiceTerm();
   }
 }

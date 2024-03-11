@@ -1,33 +1,25 @@
 import { Injectable } from '@angular/core';
-import { Camera, CameraResultType, CameraSource, Photo } from '@capacitor/camera';
-import { Filesystem, Directory } from '@capacitor/filesystem';
-import { Preferences } from '@capacitor/preferences';
+import { HttpClient} from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PhotoService {
-
-  public photo: UserPhoto = {filepath: "soon...", webviewPath:"../../assets/25.png"};
-  constructor() { }
-
-  public async addNewToGallery() {
-    // Take a photo
-    const capturedPhoto = await Camera.getPhoto({
-      resultType: CameraResultType.Uri,
-      source: CameraSource.Camera,
-      quality: 100
+ 
+  private baseURL = "https://pokeapi.co/api/v2/pokemon/"
+  private pokemon = "pikachu"
+  public photo: UserPhoto = {webviewPath:""};
+  constructor(private http: HttpClient) { 
+    this.http.get<any>(this.baseURL + this.pokemon, {
+    })
+    .subscribe((data: any) => {
+      this.photo = {
+        webviewPath: data.sprites.front_default
+      };
     });
-
-    this.photo = {
-      filepath: "soon...",
-      webviewPath: capturedPhoto.webPath!
-    };
   }
-  
 }
 
 export interface UserPhoto {
-  filepath: string;
   webviewPath?: string;
 }
