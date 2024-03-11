@@ -8,7 +8,7 @@ import { Preferences } from '@capacitor/preferences';
 })
 export class PhotoService {
 
-  public photo: UserPhoto = {filepath: "soon...", webviewPath:"../../assets/icon/25.png"};
+  public photo: UserPhoto = {filepath: "soon...", webviewPath:"../../assets/25.png"};
   constructor() { }
 
   public async addNewToGallery() {
