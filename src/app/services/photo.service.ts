@@ -8,7 +8,7 @@ import { Preferences } from '@capacitor/preferences';
 })
 export class PhotoService {
 
-  public photo: UserPhoto = {filepath: "soon...", webviewPath:"https://pm1.aminoapps.com/6722/0ab8cce1e61ba0ef3beec0823b2c5321d1716fef_00.jpg"};
+  public photo: UserPhoto = {filepath: "soon...", webviewPath:"../../assets/icon/25.png"};
   constructor() { }
 
   public async addNewToGallery() {

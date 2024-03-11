@@ -1,63 +1,65 @@
-.gjs-grid-column.feature-item {
-	padding-top:15px;
-	padding-right:15px;
-	padding-bottom:15px;
-	padding-left:15px;
-	display:flex;
-	flex-direction:column;
-	gap:15px;
-	min-width:30%;
+.head{
+	width: 100%;
+	position: sticky;
+	top: 0;
+	z-index: 10;
 }
-.gjs-grid-column.testimonial-item {
-	padding-top:15px;
-	padding-right:15px;
-	padding-bottom:15px;
-	padding-left:15px;
-	display:flex;
-	flex-direction:column;
-	gap:15px;
-	min-width:45%;
-	background-color:rgba(247,247,247,0.23);
-	border-top-left-radius:5px;
-	border-top-right-radius:5px;
-	border-bottom-right-radius:5px;
-	border-bottom-left-radius:5px;
-	align-items:flex-start;
-	border-top-width:1px;
-	border-right-width:1px;
-	border-bottom-width:1px;
-	border-left-width:1px;
-	border-top-style:solid;
-	border-right-style:solid;
-	border-bottom-style:solid;
-	border-left-style:solid;
-	border-top-color:rgba(0,0,0,0.06);
-	border-right-color:rgba(0,0,0,0.06);
-	border-bottom-color:rgba(0,0,0,0.06);
-	border-left-color:rgba(0,0,0,0.06);
+
+.cam{
+	width: 100%;
+	z-index:5;
 }
-#im5l {
-	color:black;
-    position: sticky;
-    top: 0;
-	z-index: 200;
+
+.cam-img{
+	z-index: 6;
+    width: 65%;
+    margin-top: 10%;
+    margin-left: 17%;
+    max-width: 65%;
+
+	/*Remove antialising*/
+	image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated;                 /* Universal support since 2021   */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+
 }
-.gjs-grid-column {
-	flex:1 1 0%;
-	padding:5px 0;
-    margin-top: 30px;
+
+.cam,
+.cam-img{
+	position: absolute;
+	top:0;
+	left: 0;
 }
-.gjs-grid-row {
-	display:flex;
-	justify-content:flex-start;
-	align-items:center;
-	flex-direction:column;
-	min-height:auto;
-	height: 230px;
+
+.top-container { 
+	margin-top: 10%;
+	position: relative; 
+} 
+
+.bot-container { 
+	margin-top: 10%;
+	position: relative; 
+} 
+
+.bot{
+	width: 100%;
 }
-#ixcb {
-	color:black;
+
+.bot-button{
+	z-index: 6;
+    color: black;
+    width: 15%;
+    margin-left: 41%;
 }
-#i72t {
-	color:black;
+
+.bot,
+.bot-button{
+	position: absolute;
+	top:0;
+	left: 0;
+	margin-top: 90%;
 }
