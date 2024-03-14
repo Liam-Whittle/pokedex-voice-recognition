@@ -1,10 +1,3 @@
-.head{
-	width: 100%;
-	position: sticky;
-	top: 0;
-	z-index: 10;
-}
-
 .cam{
 	width: 100%;
 	z-index:5;
@@ -36,7 +29,7 @@
 }
 
 .top-container { 
-	margin-top: 10%;
+	margin-top: 40%;
 	position: relative; 
 } 
 
@@ -44,6 +37,57 @@
 	margin-top: 10%;
 	position: relative; 
 } 
+
+.head-container { 
+	position: relative; 
+} 
+
+.light-flash{
+	position: absolute;
+    top: 0;
+    z-index: 20;
+    width: 17.7%;
+    margin-left: 9%;
+    margin-top: 5%;
+    opacity: 100%;
+	animation: fade 0.9s infinite;
+}
+
+.head{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	z-index: 10;
+}
+
+.led1-flash,
+.led2-flash,
+.led3-flash{
+	position: absolute;
+    z-index: 20;
+    width: 4.1%;
+}
+
+.led1-flash{
+	margin-left: 45.8%;
+    margin-top: 2.4%;
+	opacity: 100%;
+	animation: fadeLED1 1s infinite;
+}
+
+.led2-flash{
+	margin-left: 52.5%;
+    margin-top: 2.3%;
+	opacity: 100%;
+	animation: fadeLED2 1s infinite;
+}
+
+.led3-flash{
+	margin-left: 59.2%;
+    margin-top: 2.4%;
+	opacity: 100%;
+	animation: fadeLED3 1s infinite;
+}
 
 .bot{
 	width: 100%;
@@ -57,9 +101,125 @@
 }
 
 .bot,
-.bot-button{
+.bot-button,
+.bot-description{
 	position: absolute;
 	top:0;
 	left: 0;
 	margin-top: 90%;
+}
+
+.bot-description{
+	color: rgb(0 106 82 / 90%);
+    margin-top: 126%;
+    margin-left: 18%;
+    font-size: 6vw;
+    font-family: "d7", sans-serif;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'd7';
+    src: url('../../assets/d7.ttf') format('truetype');
+    font-weight:normal;
+    font-style: normal;
+}
+
+span[class^="dot-"]{
+  opacity: 0;
+  margin-left: 0.5vw;
+}
+.dot-one{
+  margin-left: 0 !important;
+  animation: dot-one 2s infinite linear
+}
+.dot-two{
+  animation: dot-two 2s infinite linear
+}
+.dot-three{
+  animation: dot-three 2s infinite linear
+}
+@keyframes dot-one{
+  0%{
+    opacity: 0;
+  }
+  15%{
+    opacity: 0;
+  }
+  25%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes dot-two{
+  0%{
+    opacity: 0;
+  }
+  25%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes dot-three{
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0;
+  }
+  75%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes fadeLED1{
+	0%{
+		opacity: 0;
+	}
+	25%{
+	  	opacity: 1;
+	}
+	100%{
+	  	opacity: 0;
+	}
+}
+
+@keyframes fadeLED2{
+	0%{
+		opacity: 0;
+	}
+	50%{
+	  	opacity: 1;
+	}
+	100%{
+	  	opacity: 0;
+	}
+}
+
+@keyframes fadeLED3{
+	0%{
+		opacity: 0;
+	}
+	75%{
+	  	opacity: 1;
+	}
+	100%{
+	  	opacity: 0;
+	}
+}
+
+@keyframes fade {
+	50% {opacity: 0;}
 }

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">app</string>
-    <string name="title_activity_main">app</string>
+    <string name="app_name">Pokédex</string>
+    <string name="title_activity_main">Pokédex</string>
     <string name="package_name">com.pokedexai.app</string>
     <string name="custom_url_scheme">com.pokedexai.app</string>
 </resources>

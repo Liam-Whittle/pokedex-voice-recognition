@@ -1,16 +1,35 @@
 <ion-app>
   <ion-content color="primary">
 
-    <img class="head" src="../../assets/pokedex-head.png" alt="header"/>
+    <div class="head-container"> 
+      <img class="head" src="../../assets/pokedex-head.png" alt="header"/>
+      <img class="light-flash" src="../../assets/lightflash.png" alt="light-flash"/>
+      <img class="led1-flash" src="../../assets/led1.png" alt="led1-flash"/>
+      <img class="led2-flash" src="../../assets/led2.png" alt="led2-flash"/>
+      <img class="led3-flash" src="../../assets/led3.png" alt="led3-flash"/>
+    </div>  
 
     <div class="top-container"> 
       <img class="cam" src="../../assets/pokedex-cam.png" alt="cam"/>
-      <ion-img class="cam-img" [src]="photoService.photo.webviewPath" alt="cam-img"/>
+      <ion-img class="cam-img" [src]="latestSprite" alt="cam-img"/>
     </div>   
 
     <div class="bot-container"> 
       <img class="bot" src="../../assets/pokedex-bot.png" alt="bot"/>
-      <img (click)="searchVoiceTerm()" class="bot-button" src="../../assets/button.png" alt="bot-button"/>
+      <img (click)="searchPokemon()" class="bot-button" src="../../assets/button.png" alt="bot-button"/>
+
+      <div class="wrapper">
+        <div class="loading-text"> <!--Loading-text-->
+            <p class="bot-description">{{latestPokemon}}
+            <ng-container *ngIf="textAnim">
+              <span class="dot-one">.</span>
+              <span class="dot-two">.</span>
+              <span class="dot-three">.</span>
+            </ng-container> 
+          </p>
+        </div> <!--/Loading-text-->
+      </div>
+
     </div>   
 
   </ion-content>
