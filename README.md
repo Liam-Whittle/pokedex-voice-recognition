@@ -5,7 +5,8 @@
 - Hear what the Pokémon sounds like
 
 ## Android Example
-![Screenshot_20240314_175018_Pokdex](https://github.com/Liam-Whittle/pokedex-ai/assets/60028961/0f0945ea-6a29-4f59-bf12-06199058d503)
-<img align="left" src="https://user-images.githubusercontent.com/60028961/209415327-bc431f32-350f-4b25-9420-71ed5cf81769.jpg" width="240">
+<img align="left" src="https://github.com/Liam-Whittle/pokedex-ai/assets/60028961/0f0945ea-6a29-4f59-bf12-06199058d503" width="240">
+<img align="center" src="https://github.com/Liam-Whittle/pokedex-ai/assets/60028961/986f0005-fb2f-42f5-abe8-5d3078692b3b" width="240">
 
-
+<img align="left" src="https://github.com/Liam-Whittle/pokedex-ai/assets/60028961/569a1277-833f-43e3-a8a4-aeb86b18065c" width="240">
+<img align="center" src="https://github.com/Liam-Whittle/pokedex-ai/assets/60028961/a119bc2c-53c2-42dd-a025-b4bd1e3dcea8" width="240">
